@@ -431,6 +431,59 @@ h1, h2, h3, h4, h5, h6,
   background-color: #0056b3;
 }
 
+/* Fixed TOC Solution
+   This CSS fixes both left and right TOCs to make them truly fixed position
+   instead of sticky, so they don't move when scrolling */
+
+/* Left sidebar (general TOC) - Change from sticky to fixed */
+.td-sidebar {
+  position: fixed !important; /* Override sticky with fixed */
+  top: 56px !important; /* Keep aligned with header */
+  height: calc(100vh - 56px) !important; /* Full height minus header */
+  overflow-y: auto;
+  z-index: 1020; /* High enough to be above content but below header */
+  width: inherit; /* Maintain width from parent container */
+  max-width: inherit; /* Maintain max width from parent container */
+}
+
+/* Right sidebar (page TOC) - Change from sticky to fixed */
+.td-toc {
+  position: fixed !important; /* Override sticky with fixed */
+  top: 56px !important; /* Keep aligned with header */
+  height: calc(100vh - 56px) !important; /* Full height minus header */
+  overflow-y: auto;
+  z-index: 1020; /* High enough to be above content but below header */
+  width: inherit; /* Maintain width from parent container */
+  max-width: inherit; /* Maintain max width from parent container */
+}
+
+/* Fix for Blog/Docs index pages TOC */
+.td-blog #td-toc,
+.td-docs #td-toc {
+  position: fixed !important; /* Override sticky with fixed */
+  top: 56px !important; /* Match header height */
+  height: calc(100vh - 56px) !important; /* Full height minus header */
+}
+
+/* Adjust main content area to account for fixed sidebars */
+.td-main {
+  margin-left: 0; /* Let the grid system handle spacing */
+  margin-right: 0; /* Let the grid system handle spacing */
+}
+
+/* Maintain mobile responsiveness */
+@media (max-width: 767.98px) {
+  .td-sidebar, .td-toc {
+    position: static !important; /* Revert to static on small screens */
+    height: auto !important;
+    width: 100% !important;
+  }
+}
+
+}
+
+
+
 /* ==========================================================================
    End of Custom CSS
    ========================================================================== */

@@ -13,7 +13,7 @@ This page demonstrates how to create image galleries in your teaching materials.
 
 Below is an example of an image gallery:
 
-{{< gallery images="https://placehold.co/600x400/png?text=English+Grammar+Chart,https://placehold.co/600x400/png?text=Vocabulary+Diagram,https://placehold.co/600x400/png?text=Pronunciation+Guide" >}}
+{{< gallery images="/images/galleries/dv.jpg,images/galleries/esy.jpg,/images/galleries/ekk.jpg,/images/galleries/esy.jpg" >}}
 
 ## How to Use the Gallery Shortcode
 

@@ -12,7 +12,7 @@ Images are powerful visual tools that can enhance learning and engagement. This 
 
 Here's a simple image with a caption:
 
-![Example image](https://via.placeholder.com/800x400?text=Example+Image)
+![Example image](/images/landscape.jpg)
 *Caption: This is a placeholder image demonstrating basic image display*
 
 ## Image Sizing and Alignment

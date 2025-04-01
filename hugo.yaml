@@ -7,3 +7,9 @@ module:
     - path: "github.com/google/docsy"
 params:
   copyright: "Stéphane Jacquet | All Rights Reserved"
+params:
+  ui:
+    breadcrumb_disable: false
+params:
+  offlineSearch: true
+

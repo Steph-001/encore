@@ -22,6 +22,9 @@ To create an image gallery in your content, use the following shortcode:
 ```
 {{</* gallery images="path/to/image1.jpg,path/to/image2.jpg,path/to/image3.jpg" */>}}
 ```
+## Fullscreen image:
+
+{{< fullscreen-image src="/images/1440.jpg" title="Optional image title" alt="Optional alt text" class="optional-css-class" >}}
 
 You can include as many images as you want, separated by commas. The gallery will automatically arrange them in a responsive grid.
 

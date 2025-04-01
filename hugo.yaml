@@ -1,0 +1,9 @@
+baseURL: 'https://example.org/'
+languageCode: 'en-us'
+title: 'Your English Class Website'
+module:
+  proxy: "direct"
+  imports:
+    - path: "github.com/google/docsy"
+params:
+  copyright: "Stéphane Jacquet | All Rights Reserved"

@@ -4,7 +4,6 @@ linkTitle: "Home"
 type: docs
 ---
 
-# Welcome to Your Teaching Materials Website
 
 This website is designed to host your teaching materials in an organized and accessible way. It features two main types of content:
 

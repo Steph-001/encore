@@ -1,15 +1,40 @@
 baseURL: 'https://example.org/'
 languageCode: 'en-us'
 title: 'Your English Class Website'
+
+# Module imports for the Docsy theme
 module:
   proxy: "direct"
   imports:
     - path: "github.com/google/docsy"
+
+# --- Single params section ---
 params:
+  # Copyright string
   copyright: "Stéphane Jacquet | All Rights Reserved"
-params:
+
+  # UI specific parameters (nested under params)
   ui:
+    # Set to true to disable breadcrumb navigation
     breadcrumb_disable: false
-params:
+    # Add other ui settings here if needed, following Docsy docs
+
+  # Enable Docsy's offline search feature
+  # Note: Removed the trailing '$' which was invalid
   offlineSearch: true
 
+  # Add any other theme parameters you need here,
+  # ensuring they are correctly indented under 'params:'.
+  # For example (check Docsy docs for exact names):
+  # links:
+  #   user:
+  #     - name: "Twitter"
+  #       url: "https://twitter.com/yourhandle"
+  #       icon: "fab fa-twitter"
+
+# --- Other top-level Hugo configuration below if needed ---
+# Example:
+# markup:
+#   goldmark:
+#     renderer:
+#       unsafe: true # If you need raw HTML in markdown

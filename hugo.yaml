@@ -17,11 +17,16 @@ params:
   ui:
     # Set to true to disable breadcrumb navigation
     breadcrumb_disable: false
+
+    showLightDarkModeMenu: true
     # Add other ui settings here if needed, following Docsy docs
 
   # Enable Docsy's offline search feature
   # Note: Removed the trailing '$' which was invalid
   offlineSearch: true
+
+
+
 
   # Add any other theme parameters you need here,
   # ensuring they are correctly indented under 'params:'.

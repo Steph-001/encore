@@ -1,6 +1,13 @@
+<!-- layouts/shortcodes/gallery.html -->
 <div class="image-gallery">
-  {{ $images := split (.Get "images") "," }}
-  {{ range $images }}
-    <img src="{{ . }}" alt="Gallery image">
+  {{ $imagePaths := split (.Get "images") "," }}
+  {{ range $imagePaths }}
+    {{ $trimmedPath := trim . " " }} 
+    {{ with $trimmedPath }}
+      {{/* Check if path is not empty */}}
+      {{ if ne . "" }} 
+        <img src="{{ . | absURL }}" alt="Gallery image">
+      {{ end }}
+    {{ end }}
   {{ end }}
 </div>

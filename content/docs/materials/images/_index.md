@@ -13,7 +13,7 @@ This page demonstrates how to create image galleries in your teaching materials.
 
 Below is an example of an image gallery:
 
-{{< gallery images="/images/galleries/dv.jpg,images/galleries/esy.jpg,/images/galleries/ekk.jpg,/images/galleries/esy.jpg" >}}
+{{< gallery images="/images/galleries/dv.jpg,images/galleries/dv.jpg,/images/galleries/dv.jpg,/images/galleries/dv.jpg" >}}
 
 ## How to Use the Gallery Shortcode
 
